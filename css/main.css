@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import ' https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+One ';
+
+
+/*font-family: 'Suez One', serif;
+font-family: 'Roboto Slab', serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #f6f6f6;
+}
+a {
+    color: #fa7c33;
+    text-decoration: none;
+    transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+}
+a:hover {
+    color: #c35121;
+    text-decoration: none;
+    transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    -webkit-transition: all .6s ease;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto \9;
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+}
+header {
+    width: 99.4%;
+    float: left;
+    padding: 0.3%;
+    background-color: #343434;
+    color: #fff;
+    margin-bottom: 5px solid #5a595a;
+}
+header>div#logo>a>img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+header>div#logo>a {
+    color: #fff;
+}
+header>div#logo>a>samp {
+    font-size: 2.5em;
+    margin-left: 10px;
+    font-family: 'Suez One', serif;
+}
+@media (min-width: 950px) {
+    header>div#logo>a>img {
+    margin-left: 0.5%;
+}
+    #logo {
+        float: left;
+        width: 30%;
+    }
+
+    #about {
+        float: left;
+        width: 37%;
+    }
+
+    #reg_auth {
+        float: left;
+        width: 30%;
+    }
+}
+@media (max-width: 949px) and (min-width: 525px) {
+    header>div#logo>a>img {
+        margin-left: 0.5%;
+    }
+    #logo {
+        float: left;
+        width: 50%;
+    }
+
+    #about {
+        visibility: hidden;
+        display: none;
+    }
+
+    #reg_auth {
+        float: left;
+        width: 50%;
+    }
+}
+@media (max-width: 524px) {
+    header>div#logo>a>img {
+        margin-left: 0.5%;
+    }
+    #logo {
+        width: 100%;
+    }
+
+    #about {
+        visibility: hidden;
+        display: none;
+    }
+
+    #reg_auth {
+        visibility: hidden;
+        display: none;
+    }
+}
+#about {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    padding-top: 10px;
+}
+#about>a {
+    color: #fff;
+}
+#about>a:hover {
+    border-bottom: 3px solid #125cac;
+    color: #1a92bf;
+}
+#about>a:last-child {
+    margin-left: 95px;
+}
+#reg_auth>a {
+    color: white;
+}
+#reg_auth>a:hover>div.btn {
+    border-bottom: 2px solid #1253a2;
+    margin-top: 10px;
+}
+#reg_auth>a:active>div.btn {
+    border-bottom: 2px solid #1253a2;
+    margin-top: 12px;
+}
+#reg_auth>a>div.btn {
+    float: right;
+    margin-right: 3%;
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #1874CD; /*цвет кнопки*/
+    text-shadow: #454545 0 0 2px;
+    font-family: 'Roboto Slab', serif;
+    border-bottom: 4px solid #1253a2 /*цвет ниже кнопки*/
+}
+/*конец стилий шапки сайта*/
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#content {
+    flex: 1 0 auto;
+}
+/*футер сайта*/
+footer {
+    width: 98.6%;
+    float: left;
+    padding: 0.7%;
+    background-color: #343434;
+    color: #dadada;
+    margin-top: 5px solid #2a2a2b;
+    font-family: 'Roboto Slab', serif;
+}
+#site_name {
+    margin-right: 5px;
+    color: #f4f4f4;
+    font-size: 20px;
+    float: right;
+}
+#site_name>span {
+    font-family: 'Suez One', serif;
+}
+@media (max-width: 1080px) {
+    #clear {
+        clear: both;
+    }
+}
+#footer_menu {
+    font-size: 1.2em;
+}
+#footer_menu>a {
+    margin-left: 2%;
+    color: #f4f4f4;
+}
+#footer_menu>a:hover, #rights>a:hover {
+    border-bottom: 3px solid #125cac;
+    color: #1a92bf;
+}
+#rights {
+    float: left;
+    margin-left: 25px;
+    font-size: 16px;
+    margin-top: 1.5%;
+}
+#rights>a {
+    color: white;
+}
+#social {
+    float: right;
+    width: 40%;
+    margin-right: 1px;
+    margin-top: 0.5px;
+}
+#social>a {
+    margin-left: 1px;
+    width: 40px;
+    height: 30px;
+    float: right;
+}
+@media (max-width: 520px) {
+    #site_name {
+        display: none;
+    }
+    #social {
+        width: 100%;
+}
+}
+/*картинки футера сайта*/
+footer #social img {
+    float: left;
+    height: 30px;
+    margin-right: 5px;
+}
+/*меню сайта*/
+nav {
+    background-color: #ffffff;
+    width: 99.4%;
+    padding: 7px 0.3%;
+    float: left;
+    border-bottom: 2px solid #ebebeb;
+    font-family: 'Roboto Slab', serif;
+}
+nav>a {
+    color: #323232;
+    font-size: 1.5em;
+    margin-left: 7%;
+}
+nav>a:hover {
+    color: #1f6cbf;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+#search {
+    float: right;
+    color: #7d7d7d;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 10px;
+}
+#search img {
+    margin-bottom: 0.1%;
+}
+
+
